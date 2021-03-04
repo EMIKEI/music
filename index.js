@@ -4,7 +4,7 @@ const locationBar = document.querySelector(".locationBar")
 const locationBarZone = document.querySelector(".locationBarZone")
 const locationBarZoneWidth = locationBarZone.offsetWidth
 const songs = [
-    new Audio('test.mp3')
+    new Audio('test.mp3'), new Audio('test2.mp3')
 ]
 
 const pauseImg = "https://han.gl/NXpK5";
@@ -58,9 +58,10 @@ randomSong.addEventListener("ended", function(){
 
     setTimeout(function(){
       clearInterval(locationBarZonescroll)
-      locationBarZone.scrollTo(locationBarZoneWidth,0)
       playButImg.src = playImg;  
-    },500)
+      locationBarZone.scrollTo(locationBarZoneWidth,0)
+      
+    },1000)
     
 })
 
