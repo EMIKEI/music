@@ -1,0 +1,72 @@
+@font-face {
+  font-family: "Noto Sans KR Medium";
+  font-style: normal;
+  font-weight: 500;
+  src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Medium.woff2)
+      format("woff2"),
+    url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Medium.woff)
+      format("woff"),
+    url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Medium.otf)
+      format("opentype");
+}
+body {
+  margin: 0;
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  overflow: hidden;
+  background-color: #383838;
+}
+main {
+  height: 100%;
+  width: 100vw;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.songTitle {
+  margin-top: 135px;
+  font-family: "Noto Sans KR Medium";
+  letter-spacing: -0.5px;
+  color: #f1f1f1;
+  font-size: 1.05rem;
+  text-shadow: 0 2.5px 15px #8d8d8d;
+}
+.playBut {
+  border: 0;
+  outline: 0;
+  background-color: #ffffff00;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 999;
+  cursor: pointer;
+  position: fixed;
+}
+
+.playButImg {
+  border-radius: 50%;
+  user-select: none;
+}
+.locationBarZone {
+  height: 100vh;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  bottom: 0;
+  z-index: -999;
+}
+.locationBarZone::-webkit-scrollbar {
+  display: none;
+}
+.locationBar {
+  background-image: linear-gradient(to right, #e0d647, #eeca28);
+  height: 100vh;
+  width: 100vw;
+}
